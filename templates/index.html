@@ -6,5 +6,11 @@
 </head>
 <body>
 <h1>GuestBook</h1>
+
+{% for note in notes %}
+    <h3>{{ note.author}} ({{ note.email }})</h3>
+    <p>{{ note.content }}</p>
+{% endfor %}
+
 </body>
 </html>

@@ -1,5 +1,10 @@
 from django.shortcuts import render
 
 # Create your views here.
+from guestbook.models import Book
+
+
 def index_view(request):
-    return render(request, 'index.html')
+    notes = Book.objects.order_by('-created_at')
+    context = {'notes': notes}
+    return render(request, 'index.html', context)
