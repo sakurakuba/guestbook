@@ -8,8 +8,10 @@
 <h1>GuestBook</h1>
 
 {% for note in notes %}
+    <table style="border-radius: 10px">
     <h3>{{ note.author}} ({{ note.email }})</h3>
     <p>{{ note.content }}</p>
+    </table>
 {% endfor %}
 
 </body>
