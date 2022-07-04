@@ -21,3 +21,23 @@ def add_note(request):
         return redirect('index')
 
 
+def update_note(request, pk):
+    note = get_object_or_404(Book, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'update.html', {'note': note})
+    else:
+        note.author = request.POST.get('author')
+        note.email = request.POST.get('email')
+        note.content = request.POST.get('content')
+        note.save()
+        return redirect('index')
+
+
+def delete_note(request, pk):
+    #pk = kwargs.get("pk")
+    note = get_object_or_404(Book, pk=pk)
+    if request.method == 'GET':
+        return render(request, 'delete.html', {'note': note})
+    else:
+        note.delete()
+        return redirect('index')

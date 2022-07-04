@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from guestbook.views import index_view, add_note
+from guestbook.views import index_view, add_note, update_note, delete_note
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_view, name='index'),
-    path('add/', add_note, name='add_note')
+    path('add/', add_note, name='add_note'),
+    path('note/<int:pk>/update', update_note, name='update_note'),
+    path('note/<int:pk>/delete', delete_note, name='delete_note'),
 ]
