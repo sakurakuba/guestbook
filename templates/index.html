@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>GuestBook</title>
-</head>
-<body>
-<h1>GuestBook</h1>
+{% extends "base.html" %}
+{% block nav %}
+<li class="nav-item">
+          <a class="nav-link" href="{% url "add_note" %}">Add new note</a>
+        </li>
+{% endblock %}
 
+{% block content %}
+<h1>GuestBook</h1>
+<br/>
 {% for note in notes %}
     <table style="border-radius: 10px">
     <h3>{{ note.author}} ({{ note.email }})</h3>
     <p>{{ note.content }}</p>
     </table>
 {% endfor %}
-<h4><a href="add/">Add new note</a> </h4>
-</body>
-</html>
+<h4><a href="{% url "add_note" %}">Add new note</a> </h4>
+{% endblock %}

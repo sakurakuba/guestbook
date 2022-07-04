@@ -10,10 +10,10 @@ class Book(models.Model):
     content = models.TextField(max_length=3000, verbose_name='Content')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Create date')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Updated date')
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, null=False, blank=False, verbose_name='Status', default=STATUS_CHOICES[0][0])
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, verbose_name='Status', default=STATUS_CHOICES[0][0])
 
     def __str__(self):
-        return f"{self.id}. {self.author}: {self.email}, {self.status}"
+        return f"{self.id}. {self.author}: {self.email}, {self.content}"
 
     class Meta:
         db_table = 'book'

@@ -1,14 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Add new note to Guest Book</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %}Add new note to Guest Book{% endblock %}
+
+{% block content %}
 <h1>Add new note to Guest Book</h1>
 
-<p>
-    <h4><a href="/">Return to home page</a> </h4>
-</p>
-</body>
-</html>
+<form action="{% url "add_note" %}" method="post">
+    {% csrf_token %}
+
+    <label>Author:</label><br/>
+    <input type="text" name="author"/><br/>
+    <label>Email:</label><br/>
+    <input type="text" name="email"/><br/>
+    <label>Text:</label><br/>
+    <textarea name="content"></textarea><br/>
+    <br/>
+    <input type="submit" value="Add"/>
+
+    <p><h5><a href="{% url "index" %}">Return to Main</a></h5></p>
+</form>
+{% endblock %}

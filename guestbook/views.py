@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 
 # Create your views here.
-from guestbook.models import Book
+from guestbook.models import Book, STATUS_CHOICES
 
 
 def index_view(request):
@@ -10,4 +10,14 @@ def index_view(request):
     return render(request, 'index.html', context)
 
 def add_note(request):
-    return render(request, 'add_note.html')
+    if request.method == 'GET':
+        return render(request, 'add_note.html')
+    else:
+        author = request.POST.get('author')
+        email = request.POST.get('email')
+        content = request.POST.get('content')
+        new_note = Book.objects.create(author=author, email=email, content=content)
+        context = {'notes': new_note}
+        return redirect('index')
+
+
