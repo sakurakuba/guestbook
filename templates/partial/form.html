@@ -1,9 +1,10 @@
 {% csrf_token %}
+{{ form.as_p }}
 
-    <label>Author:</label><br/>
-    <input type="text" name="author" value="{{ note.author }}"/><br/>
-    <label>Email:</label><br/>
-    <input type="text" name="email" value="{{ note.email }}" /><br/>
-    <label>Text:</label><br/>
-    <textarea name="content">{{ note.content }}</textarea><br/>
-    <br/>
+{#    <label>Author:</label><br/>#}
+{#    <input type="text" name="author" value="{{ note.author }}"/><br/>#}
+{#    <label>Email:</label><br/>#}
+{#    <input type="text" name="email" value="{{ note.email }}" /><br/>#}
+{#    <label>Text:</label><br/>#}
+{#    <textarea name="content">{{ note.content }}</textarea><br/>#}
+{#    <br/>#}
