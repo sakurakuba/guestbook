@@ -1,0 +1,140 @@
+[
+{
+  "model": "guestbook.book",
+  "pk": 1,
+  "fields": {
+    "author": "Unknown",
+    "email": "some@some.com",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "created_at": "2022-07-03T02:38:40.530Z",
+    "updated_at": "2022-07-03T02:40:33.576Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 2,
+  "fields": {
+    "author": "A1",
+    "email": "fer@ool.com",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "created_at": "2022-07-03T02:39:03.546Z",
+    "updated_at": "2022-07-03T02:39:03.546Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 3,
+  "fields": {
+    "author": "John Doe",
+    "email": "doe@doe.com",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "created_at": "2022-07-03T02:39:30.926Z",
+    "updated_at": "2022-07-03T02:39:30.927Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 4,
+  "fields": {
+    "author": "Jane Doe",
+    "email": "jane@jane.com",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "created_at": "2022-07-03T02:39:56.592Z",
+    "updated_at": "2022-07-03T02:39:56.592Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 6,
+  "fields": {
+    "author": "asdSA",
+    "email": "some@some.com",
+    "content": "PLUS55555",
+    "created_at": "2022-07-04T01:16:32.046Z",
+    "updated_at": "2022-07-04T19:48:01.225Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 8,
+  "fields": {
+    "author": "22",
+    "email": "fer@ool.com",
+    "content": "56",
+    "created_at": "2022-07-04T01:22:53.447Z",
+    "updated_at": "2022-07-04T01:23:26.230Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 10,
+  "fields": {
+    "author": "ttt",
+    "email": "ttt@sds.com",
+    "content": "xxxxx",
+    "created_at": "2022-07-04T10:22:56.730Z",
+    "updated_at": "2022-07-05T00:11:22.994Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 20,
+  "fields": {
+    "author": "yyyy",
+    "email": "ttt@www.com",
+    "content": "wwww",
+    "created_at": "2022-07-04T19:46:17.692Z",
+    "updated_at": "2022-07-04T19:54:03.620Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 24,
+  "fields": {
+    "author": "sdf",
+    "email": "sdfds@as.com",
+    "content": "eafas",
+    "created_at": "2022-07-04T22:42:42.732Z",
+    "updated_at": "2022-07-04T22:42:42.733Z",
+    "status": "active"
+  }
+},
+{
+  "model": "guestbook.book",
+  "pk": 25,
+  "fields": {
+    "author": "Mehhh",
+    "email": "ewrwe@sdf.com",
+    "content": "9999999",
+    "created_at": "2022-07-04T23:49:03.672Z",
+    "updated_at": "2022-07-05T00:44:03.270Z",
+    "status": "active"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$FWDQKACcJlrHe2VrXg5dDj$kd8Eve/j5/GZ2CE4f8upOd3YcuQUvmafThFEcV+yd4o=",
+    "last_login": "2022-07-04T20:32:21.223Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-07-03T02:37:24.258Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
